@@ -8,7 +8,7 @@ import DataHourImage from "../../data/data_Hour.jpg";
 
 function App() {
   return (
-    <div>
+    <div id="home">
       <NavBar></NavBar>
       <div className="home-intro">
         <img

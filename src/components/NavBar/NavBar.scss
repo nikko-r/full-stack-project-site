@@ -23,3 +23,24 @@
         min-width: 20rem;
     }
 }
+
+.ul-link-animation {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ul-link-animation:after {
+    margin-top: 0px;
+    display: block;
+    content: "";
+    border-bottom: solid 3px #fffd38;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out; //animation speed
+    transform-origin: 50%; //center end location
+}
+
+.ul-link-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0%; //starting location
+}

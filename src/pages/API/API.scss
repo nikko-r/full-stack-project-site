@@ -1,0 +1,19 @@
+#api {
+    height: 100vh;
+    width: 100vw;
+}
+
+.api-usage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    .api-usage__section {
+        width: 60%;
+    }
+}
+
+.api-usage-content {
+    background-color: #222222;
+    height: 40%;
+}
