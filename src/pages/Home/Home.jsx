@@ -5,8 +5,14 @@ import NavBar from "../../components/NavBar/NavBar";
 import GeigerCounterImage from "../../assets/images/GeigerCounter.png";
 import DataImage from "../../data/data.jpg";
 import DataHourImage from "../../data/data_Hour.jpg";
+import { useState } from "react";
 
 function App() {
+  const [ImageData, setImageData] = useState([DataImage, DataHourImage]);
+  setInterval(() => {
+    setImageData([...ImageData]);
+  }, 60000);
+
   return (
     <div id="home">
       <NavBar></NavBar>

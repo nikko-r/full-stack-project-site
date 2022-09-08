@@ -14,7 +14,7 @@ const NavBar = () => (
     </div>
     <div className="nav-bar__links">
       <Link className="ul-link-animation" to="/api">
-        API
+        API DOCUMENTATION
       </Link>
       <Link className="ul-link-animation" to="/usersubmissions">
         USER SUBMISSIONS
